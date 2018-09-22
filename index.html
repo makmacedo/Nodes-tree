@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Task2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" media="screen" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<div class="container start-box">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title center"><strong>Nodes Structure Simulation</strong></h3>
+        </div>
+        <div class="panel-body">
+            <form class="needs-validation" action="simulation.php" method="POST">
+            <!--form class="" data-example-id="simple-input-groups"--> 
+                <div class="input-group"> 
+                    <span class="input-group-addon" id="basic-addon1">Number of nodes (2~1000)</span> 
+                    <input type="number" name="nodes" class="form-control" placeholder="Nodes" value="250" aria-describedby="basic-addon1"  min="2" max="1000" required> 
+                    <span class="validity"></span>
+                </div> 
+                <div class="input-group"> 
+                    <span class="input-group-addon" id="basic-addon1">Number of collums (1 ~ 10)</span> 
+                    <input type="number" name="collums" class="form-control" placeholder="Collums" value="7" aria-describedby="basic-addon1" min="1" max="10" required> 
+                    <span class="validity"></span> 
+                </div>  
+                <button type="submit" class="btn btn-primary btn-lg center-block play">Simulate</button>
+            </form>
+            <div class="author"><a href="https://www.linkedin.com/in/arcadio-macedo/">Arcadio Macedo <i class="fab fa-linkedin"></i></a></div>
+        </div>
+    </div>
+</div>
+
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
